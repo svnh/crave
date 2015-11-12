@@ -1,0 +1,20 @@
+<ion-view view-title="Crave">
+  <ion-content class="padding">
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search">
+      </label>
+    </div>
+
+    <div class="list" ng-repeat="restaurant in restaurants">
+      <a class="item item-icon-left item-icon-right" href="#">
+        <i class="icon ion-icecream"></i>
+        {{ restaurant.name }} - {{restaurant.rating}} stars
+        <i class="icon ion-chevron-right"></i>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>
